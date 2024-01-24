@@ -20,19 +20,65 @@
     <style>
       .font-manrope {
         font-family: "Manrope", sans-serif;
-      }
+       }
     </style>
   </head>
-  <body class="">
-    <header></header>
-   
+  <body class="font-manrope">
 
+    <header>
+     <div class="container mx-auto mt-5">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="text-4xl text-[#131318] font-extrabold">Hockey <span class="text-[#FF4240]">’</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-[#FF4240] font-bold">Home</a></li>
+            <li><a class="text-[#424247] font-bold">About</a></li>
+            <li><a class="text-[#424247] font-bold">Pages</a></li>
+            <li><a class="text-[#424247] font-bold">Blog</a></li>
+            <li><a class="text-[#424247] font-bold">Contact</a></li>
+            <li>
+              <details>
+                <summary class="hidden">Parent</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a class="hidden">Item 3</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-4">
+          <img src="./Images/Frame(2).svg" alt="">
+          <a class="btn bg-[#FF4240]">Get Ticket</a>
+        </div>
+      </div>
+     </div>
+    </header>
     <main class="font-manrope">
        <!-- banner section -->
       <div class="container mx-auto mt-16">
         <div class="carousel w-full h-[750px]">
           <div id="slide1" class="carousel-item relative w-full">
-            <img style="height: 100% width; width: 100%;" src="/Images/1.png" class="" />
+            <img style="height: 100% width; width: 100%;" src="./Images/1.png" class="" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide4" class="btn btn-circle">❮</a> 
               <a href="#slide2" class="btn btn-circle">❯</a>
@@ -194,7 +240,7 @@
          </div>
          </div>
          <!-- card-2 -->
-         <div class="grid-cols-7 col-span-6">
+         <div class="grid-cols-1 col-span-6 lg:grid-cols-7">
           
           <div class="card card-side bg-base-100 shadow-xl">
             <figure><img src="./Images/7.png" alt=""/></figure>
@@ -462,8 +508,8 @@
         <header class=" text-[#FFF] text-3xl font-extrabold ">Get In Touch</header> 
         <p class=" text-[#FBFBFB] font-medium w-[345px]">Dit amet consectetur. Condimentum  adipiscing 
           aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-        <a class=" text-[#FBFBFB] font-medium link link-hover"> <i class=" fa-solid fa-envelope"></i> hockeys@support.com</a>
-        <a class=" text-[#FBFBFB] font-medium link link-hover"> <i class="fa-solid fa-phone"></i> (+62) 123-321-543</a>
+        <a class=" text-[#FBFBFB] font-medium link link-hover "> <i class=" text-[#FF4240] fa-solid fa-envelope"> </i> hockeys@support.com</a>
+        <a class=" text-[#FBFBFB] font-medium link link-hover"> <i class=" text-[#FF4240] fa-solid fa-phone"></i> (+62) 123-321-543</a>
       </nav> 
       <nav class="gap-4">
         <header class=" text-[#FFF] text-lg font-bold ">Company</header> 
